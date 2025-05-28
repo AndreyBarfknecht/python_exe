@@ -6,7 +6,7 @@ nota3 = float(input("Qual a terceira nota? "))
 soma = nota1+nota2+nota3
 media = soma / 3
 
-print ("\nO nome do aluno é",nome,"\na idade é",idade,"\na média do aluno é : ",media)
+print ("\nO nome do aluno é",nome,"\na idade é",idade,"\na média do aluno é:", round(media,2) )
 
 if(media < 5):
     print ("O aluno está reprovado")
