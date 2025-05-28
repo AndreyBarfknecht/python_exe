@@ -15,5 +15,6 @@ elif(media >= 7):
 else:
     print("O aluno está de recuperação")
 
+
     
 
