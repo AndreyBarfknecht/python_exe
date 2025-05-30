@@ -1,6 +1,7 @@
 Exercícios Iniciais de Python
 
 Este repositório contém uma coleção de exercícios iniciais desenvolvidos em Python. O objetivo principal é consolidar conceitos fundamentais da linguagem e práticas básicas de programação.
+
 Estrutura do Repositório
 
     exe_iniciais: Contém exercícios fundamentais, como "CalculadoraSimples.py", ideal para quem está começando a aprender Python.
