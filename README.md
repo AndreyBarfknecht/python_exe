@@ -40,12 +40,6 @@ Bash
 
     python exe_1.py
 
-Contribuição
-
-Este repositório serve primariamente como um portfólio de aprendizado. No entanto, sugestões para melhorias, otimizações de código ou novas soluções para os problemas existentes são sempre bem-vindas. Sinta-se à vontade para:
-
-    Abrir uma Issue para relatar problemas ou sugerir melhorias.
-    Enviar um Pull Request com suas contribuições.
 
 Contato
 
