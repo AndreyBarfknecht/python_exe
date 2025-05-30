@@ -50,7 +50,7 @@ Slytherin = 0
 
 print("\nWelcome to Hogwarts!!!\n\nThe Sorting Hat will ask you some questions to find out which house you belong to.")#inicio dando bem vindo 
 #questão 1
-Q1 = int (input("\nDo you like Dawn or Dusk?\n1) Dawn\n2) Dusk\nAnswer: "))
+Q1 = int (input("\nDo you like Dawn or Dusk?\n1) Dawn\n2) Dusk\nAnswer(1-2): "))
 if Q1 == 1:
     Gryffindor += 1 
     Ravenclaw += 1
@@ -62,7 +62,7 @@ else:
     print("Wrong input.")
 
 #questão 2 
-Q2 = int (input("\nQ2) When I’m dead, I want people to remember me as:\n1) The Good\n2) The Great\n3) The Wise\n4) The Bold\nAnswer: "))
+Q2 = int (input("\nQ2) When I’m dead, I want people to remember me as:\n1) The Good\n2) The Great\n3) The Wise\n4) The Bold\nAnswer(1-4): "))
 if Q2 == 1:
     Hufflepuff += 2
 elif Q2 == 2:
@@ -75,7 +75,7 @@ else:
     print("Wrong input.")
 
 #Questão 3
-Q3 = int (input("\nQ3) Which kind of instrument most pleases your ear?\n1) The violin\n2) The trumpet\n3) The piano\n4) The drum\nAnswer:"))
+Q3 = int (input("\nQ3) Which kind of instrument most pleases your ear?\n1) The violin\n2) The trumpet\n3) The piano\n4) The drum\nAnswer(1-4):"))
 if Q3 == 1:
     Slytherin += 4
 elif Q3 == 2:
