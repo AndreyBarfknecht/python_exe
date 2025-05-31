@@ -30,3 +30,16 @@ FizzBuzz
 ...
 
 Btw, it's totally okay if you can't get this one... it's a tough problem! Take a look at the hint and the solution before moving forward to the Checkpoint Project! ⛳️"""
+
+for numero  in range(1,101):
+    
+
+    if numero % 3 == 0 and numero % 5 == 0:
+        numero = "FizzBuzz"
+    elif numero % 3 == 0:
+        numero = "Fizz"
+    elif numero % 5 == 0:
+        numero = "Buzz"
+    
+
+    print(numero)
