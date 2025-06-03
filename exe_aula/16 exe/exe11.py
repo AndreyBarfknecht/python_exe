@@ -10,4 +10,4 @@ largura = float(input("Qual a largura da cozinha: "))
 altura = float(input("Qual a altura da cozinha: "))
 
 m2cozinha = largura * comprimento
-print(m2cozinha)
+print(m2cozinha,"m²")
