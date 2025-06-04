@@ -9,7 +9,7 @@ comprimento = float(input("Qual o comprimento da cozinha: "))
 largura = float(input("Qual a largura da cozinha: "))
 altura = float(input("Qual a altura da cozinha: "))
 
-m2cozinha = largura * comprimento
-qtdazulejos = m2cozinha / 2
-arredondado = math.ceil(qtdazulejos)
-print("Você vai precisar de ",arredondado,"caixas de azulejos.")
+m2parede = comprimento * altura 
+
+caixaazulejos = (m2parede * 4) / 2
+
