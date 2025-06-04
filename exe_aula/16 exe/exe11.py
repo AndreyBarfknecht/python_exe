@@ -4,10 +4,12 @@
   (considere que não será descontado a área ocupada por portas e janelas).
   Cada caixa de azulejos possui 2m2. """
 """multiplicar a largura de cada parede pela altura do ambiente,"""
-
+import math
 comprimento = float(input("Qual o comprimento da cozinha: "))
 largura = float(input("Qual a largura da cozinha: "))
 altura = float(input("Qual a altura da cozinha: "))
 
 m2cozinha = largura * comprimento
-print(m2cozinha,"m²")
+qtdazulejos = m2cozinha / 2
+arredondado = math.ceil(qtdazulejos)
+print("Você vai precisar de ",arredondado,"caixas de azulejos.")
