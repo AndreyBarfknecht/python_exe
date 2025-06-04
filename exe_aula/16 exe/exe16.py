@@ -12,7 +12,7 @@ comsumocombustivel = float(input("Qual o consumo da F1 (em Km.l): "))
 """Calcular e escrever o número mínimo de litros necessários para percorrer até o primeiro
       reabastecimento. Obs: Considere que o número de voltas entre os reabastecimentos é o mesmo."""
 
-comprimentoDapistaemKM = comprimentoDapista / 1000
+comprimentoDapistaemKM = comprimentoDapista / 1000 #transformar M em KM
 minimoLitrosNecessario = (numeroTotalVoltas / numeroReabastecimento) * comprimentoDapistaemKM / comsumocombustivel
 print("\nMínimo de liros necessário para percirrer até o primeiro reabastecimento --> ",round(minimoLitrosNecessario,2),"L")
 
