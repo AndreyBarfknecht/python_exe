@@ -3,7 +3,7 @@
 valormesa = float(input("Qual o valor da conta ?"))
 taxa = 0.10
 
-
-print("O total a pargar é: ",(valormesa*taxa)+valormesa)
+print("\nValor da gorjeta = ",round(valormesa*taxa,2))
+print("\nO total a pargar é: ",(valormesa*taxa)+valormesa)
 
  
