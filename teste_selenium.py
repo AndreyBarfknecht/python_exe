@@ -4,7 +4,7 @@ from selenium.webdriver.common.keys import Keys
 import time
 
 driver = webdriver.Chrome()
-driver.get("https://www.instagram.com")
+driver.get("https://www.instagram.com/andrey.barfknecht")
 time.sleep(2)
 caixa_pesquisa = driver.find_element(By.NAME, "q")
 caixa_pesquisa.send_keys("Selenium Python")
