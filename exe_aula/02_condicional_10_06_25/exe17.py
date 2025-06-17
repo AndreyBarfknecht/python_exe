@@ -30,7 +30,7 @@ elif c > a and c > b:
         nummaior2 = a
     else:
         nummaior2 = b
-        print("\nA soma dos dois números maiores é",nummaior1,"+",nummaior2,"=",(nummaior1+nummaior2))
+    print("\nA soma dos dois números maiores é",nummaior1,"+",nummaior2,"=",(nummaior1+nummaior2))
 
 else:
     print("\nos valores são iguais")
