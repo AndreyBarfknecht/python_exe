@@ -4,11 +4,23 @@
   as coordenadas."""
 
 
-# 1 quad (  x,y   )
-# 2 quad ( -x,y   )
-# 3 quad ( -x,-y  )
-# 4 quad (  x,-y  )
+# B quad (  x,y   )
+# A quad ( -x,y   )
+# C quad ( -x,-y  )
+# D quad (  x,-y  )
 
+x = int(input("Qual a coordenada X = "))
+y = int(input("Qual a coordenada Y = "))
 
+if x > 0 and y > 0:
+    print("Quad B")
+elif x < 0 and y < 0:
+    print("Quad C")
+elif x > 0 and y < 0:
+    print("Quad D")
+elif x < 0 and y > 0:
+    print("Quad A")
 
+else :
+    print("NÃO ESTÁ EM NENHUM QUADRANTE")
 
