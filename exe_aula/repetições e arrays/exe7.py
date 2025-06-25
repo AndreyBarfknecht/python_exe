@@ -1,0 +1,1 @@
+'''Solicite 6 números, armazene em um vetor, e informe qual é o maior e qual é o menor número digitado.'''

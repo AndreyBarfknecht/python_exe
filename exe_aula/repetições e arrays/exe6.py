@@ -1,0 +1,1 @@
+'''Solicite 10 números, armazene em um vetor e calcule a soma de todos os valores.'''
