@@ -1,0 +1,57 @@
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+import time
+
+# --- Configuração ---
+driver = webdriver.Chrome()
+driver.get("https://the-internet.herokuapp.com/javascript_alerts")
+wait = WebDriverWait(driver, 10)
+
+try:
+    # --- Cenário 1: Alerta Simples (Apenas "OK") ---
+    print("--- Testando Alerta Simples ---")
+    driver.find_element(By.XPATH, "//button[text()='Click for JS Alert']").click()
+    # Espera o alerta aparecer
+    alert = wait.until(EC.alert_is_present())
+    texto_alerta = alert.text
+    print(f"Texto do alerta: '{texto_alerta}'")
+    time.sleep(2)
+    alert.accept() # Clica em "OK"
+    print("Alerta aceito.")
+    time.sleep(1)
+
+    # --- Cenário 2: Alerta de Confirmação ("OK" ou "Cancelar") ---
+    print("\n--- Testando Alerta de Confirmação (clicando em Cancelar) ---")
+    driver.find_element(By.XPATH, "//button[text()='Click for JS Confirm']").click()
+    alert = wait.until(EC.alert_is_present())
+    time.sleep(2)
+    alert.dismiss() # Clica em "Cancelar"
+    print("Alerta rejeitado (dismiss).")
+    resultado = driver.find_element(By.ID, "result").text
+    print(f"Resultado na página: '{resultado}'")
+    time.sleep(1)
+
+    # --- Cenário 3: Alerta de Prompt (Entrada de Texto) ---
+    print("\n--- Testando Alerta de Prompt ---")
+    driver.find_element(By.XPATH, "//button[text()='Click for JS Prompt']").click()
+    alert = wait.until(EC.alert_is_present())
+    texto_para_enviar = "Olá, Selenium!"
+    print(f"Enviando texto '{texto_para_enviar}' para o prompt...")
+    alert.send_keys(texto_para_enviar) # Digita no prompt
+    time.sleep(2)
+    alert.accept() # Clica em "OK"
+    resultado = driver.find_element(By.ID, "result").text
+    print(f"Resultado na página: '{resultado}'")
+    
+    if texto_para_enviar in resultado:
+        print("VERIFICAÇÃO OK: O texto enviado aparece no resultado.")
+    
+except Exception as e:
+    print(f"Ocorreu um erro: {e}")
+
+finally:
+    # --- Finalização ---
+    time.sleep(3)
+    driver.quit()
