@@ -21,7 +21,7 @@ def divisao (numero1,numero2):
 
 while True:
     def main():
-        numero1 = float(input("Qual o primeiro número: "))
+        numero1 = float(input("\nQual o primeiro número: "))
         operacao = input("Qual operação você quer fazer (+,-,*,/) : ")
         numero2 = float(input("Qual o segundo número: "))
         if operacao == "+":
@@ -37,7 +37,7 @@ while True:
         
             
 
-        print(f"{numero1} {operacao} {numero2} = {resultado_operacao}")
+        print(f"\n{numero1} {operacao} {numero2} = {resultado_operacao}")
 
     main()
 
